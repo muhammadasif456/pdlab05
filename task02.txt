@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int volume(int length, int height, int width,string unit);
+main()
+{
+    system("cls");
+    int height;
+    int length;
+    int width;
+    string unit;
+    cout<<"enter length"<<endl;
+    cin>>length;
+    cout<<"enter height"<<endl;
+    cin>>height;
+    cout<<"enter width"<<endl;
+    cin>>width;
+    cout<<"enter unit mil for milli, cent for centimeter, me for meter, and km for kilometer"<<endl;
+    cin>>unit;
+    volume1=volume(length,height,width,unit);
+    cout<<"volume is"<<volume1;
+}
+int volume(int length,int height,int width,string unit)
+{
+    volume=(length*height*width)/3;
+    if(unit=="centi")
+     {
+        int volume1*=volume*100*100*100;
+        return volume1;
+     }
+
+    
+
+}
